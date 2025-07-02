@@ -1,0 +1,252 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: black;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+}
+
+.header-elm{
+  opacity: 0;
+}
+
+.navbar {
+  background-color: #262626ff;
+  position: fixed;
+  width: 100%;
+  top: -60px;
+  left: 0;
+  z-index: 100;
+}
+
+.inner-navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.img-component {
+  width: 280px;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+h4 {
+  color: white;
+}
+
+.links-component {
+  width: 600px;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+}
+
+a {
+  color: white;
+  text-decoration: underline;
+}
+
+.nav-link {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.nav-link:hover {
+  background-color: #050505ff;
+}
+
+.site-body {
+  margin-top: 80px;
+}
+
+h2 {
+  color: white;
+  text-align: center;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+.name-title-hr {
+  border-color: #595959;
+  width: 1%;
+}
+
+.wa-robotics-title {
+  opacity: 0;
+}
+
+.banner-img {
+  width: 2%;
+  height: 50vh;
+  display: block;
+  margin: auto;
+  opacity: 0;
+  object-fit: cover;
+}
+
+.inner-info {
+  background-color: white;
+  width: 98%;
+  margin: auto;
+  box-sizing: border-box;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding: 20px;
+  overflow: hidden;
+}
+
+h3 {
+  color: #6b1421ff;
+  text-decoration: underline;
+  font-size: 30px;
+  text-align: center;
+}
+
+.footer-txt {
+  color: #430a13ff;
+  font-size: 15px;
+}
+
+.footer {
+  background-color: white;
+  border-top: 1.5px solid #595959;
+  width: 100%;
+  position: fixed;
+  bottom: -70px;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.footer-unweighted-txt {
+  font-weight: 200;
+}
+
+.info-flexbox {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin: auto;
+}
+
+.written-info {
+  width: 60%;
+}
+
+.written-img {
+  width: 35%;
+}
+
+.about-us-img {
+  width: 450px;
+  height: 300px;
+}
+
+.about-us-p {
+  font-size: 18px;
+  border: 0.5px #595959 solid;
+  color: #333333;
+  box-sizing: border-box;
+  padding: 15px;
+  height: 300px;
+}
+
+.sponsors {
+  background-color: #ededed;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.sponsors-flexbox {
+  display: flex;
+  width: 98%;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.redhat {
+  width: 450px;
+  height: 250px;
+}
+
+.polar-controls {
+  width: 250px;
+  height: 250px;
+}
+
+.solidworks {
+  width: 500px;
+  height: 250px;
+}
+
+.sponsor-img {
+  border: 0.5px #595959 solid;
+}
+
+.about-us-header {
+  width: 60%;
+}
+
+.ftc-info-header {
+  width: 60%;
+  float: right;
+}
+
+.git-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.title-div {
+  height: 80vh;
+}
+
+.vertical-align {
+  height: 80vh;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.section {
+  height: 100vh;
+  position: relative;
+}
+
+.ftc-link {
+  color: #582d2d;
+  font-size: 22px;
+  display: block;
+  margin: auto;
+}
+
+.ftc-link:hover {
+  color: #724646;
+  text-decoration: underline;
+  cursor: default;
+}
+
+.ftc-link:not(hover) {
+  color: #582d2d;
+  text-decoration: none;
+}
+
+.wa-teams-title{
+  margin-top: 50vh;
+  font-size: 50px;
+}

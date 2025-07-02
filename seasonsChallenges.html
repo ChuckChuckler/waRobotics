@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="/styles/style2.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <div id="navbar" class="navbar">
+    <div class="inner-navbar">
+      <div class="inner-nav-component img-component">
+        <img src="/imgs/roboticsIcon.png" class="icon" onclick="openPage('index')">
+        <h4>Westford Academy Robotics</h4>
+      </div>
+      <div class="inner-nav-component links-component">
+        <div class="nav-link" onclick="openPage('achievements')">
+          <h4><a>Achievements</a></h4>
+        </div>
+        <div class="nav-link" onclick="openPage('teams')">
+          <h4><a>Teams</a></h4>
+        </div>
+        <div class="nav-link" onclick="openPage('summercamp')">
+          <h4><a>Summer Camp</a></h4>
+        </div>
+        <div class="nav-link" onclick="openPage('seasonsChallenges')">
+          <h4><a>Seasons & Challenges</a></h4>
+        </div>
+        <div class="nav-link" onclick="openPage('outreach')">
+          <h4><a>Outreach</a></h4>
+        </div>
+        <div class="nav-link" onclick="openPage('join')">
+          <h4><a>Join</a></h4>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="site-body">
+    <div class="title-block">
+      <h2><i>Ghost and Phantom Robotics</i></h2>
+      <h1>Seasons and Challenges</h1>
+    </div>
+    <br>
+    <div class="inner-body">
+      <div class="flex intoTheDeep">
+        <button class="arrow"><<</button>
+        <div class="inner-flex">
+          <div class="info-flex">
+            <div>
+              <h5>2024-25</h5>
+              <h3>Into The Deep</h3>
+              <iframe id="embedVideo" width="560" height="315" src="https://www.youtube.com/embed/ewlDPvRK4U4?si=9jG4XcrLudsjEFGt" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <p class="info-p">my father was a funko pop</p>
+          </div>
+        </div>
+        <button class="arrow" id="nextArrow" onclick="next()">>></button>
+      </div>
+
+      <div class="flex centerStage">
+        <button class="arrow"><<</button>
+        <div class="inner-flex">
+          <div class="info-flex">
+            <div>
+              <h5>2023-24</h5>
+              <h3>Center Stage</h3>
+              <iframe id="embedVideo" width="560" height="315" src="https://www.youtube.com/embed/6e-5Uo1dRic?si=5I_WOFlfPZc_ORBR" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <p class="info-p">The objective of the challenge is to score more points than the opposing team or alliance. There are a multitude of ways you can score points. However, the most common way is by moving and placing pixels on the backboard. When placing pixels, you can form mosaics, which is either three pixels of one color or three pixels that are diffent colors. You can also earn extra points by launching an drone or paper airplane a certain distance and having your robot hang on the trough (bars in the middle) at the end of the match.</p>
+          </div>
+          <hr class="divider">
+          <div class="info-flex">
+            <img class="info-img" src="imgs/gnocchi.png">
+            <p class="gnocchiInfo">Our robot named "Gnocchi" tackled all aspects of the competition and was designed entirely using Solidworks. It was able to move around freely using mechanum drive along with being able to place pixels on the backboard, shoot a drone, and hang at the end of the match. Our robot was built using all either custom metal CNC parts or custom 3-D printed parts.</p>
+          </div>
+        </div>
+        <button class="arrow" id="nextArrow" onclick="next()">>></button>
+      </div>
+
+      <div class="flex powerplay">
+        <button class="arrow"><<</button>
+        <div class="inner-flex">
+          <div class="info-flex">
+            <div>
+              <h5>2022-23</h5>
+              <h3>PowerPlay</h3>
+              <iframe id="embedVideo" width="560" height="315" src="https://www.youtube.com/embed/HsitvZ0JaDc?si=3qtNLxLO8nqK7H7L" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+          </div>
+          <hr class="divider">
+          <div class="info-flex">
+            <iframe id="embedVideo" width="560" height="315" src="https://www.youtube.com/embed/zjY-FXmrwVo?si=sEpPnf7moQZ5EOGQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <p class="info-p">This video shows a full match replay from the "Who Let the Bots Out" qualifier match in Canton, MA. In this match, we were on the red alliance with alliance partner Team 18438 Wolfpack Machina, and this match earned the 14th highest score in the world for the 2022-2023 season.</p>
+          </div>
+          <hr class="divider">
+          <h2>Season Results</h2>
+          <div class="info-flex">
+            <div>
+              <br>
+              <h3>Overall World Placement</h3>
+              <ul>
+                <li>75th out of 6013 active teams (Top 1.25%)</li>
+              </ul>
+              <h3>MA State Championship</h3>
+              <ul>
+                <li>Design Award</li>
+                <li>2nd Place in Qualifiers</li>
+              </ul>
+            </div>
+            <div>
+              <h3>Qualifiers</h3>
+              <h4 class="qualifier">MA Battle of Lexington 8.0</h4>
+              <ul>
+                <li>Motivate Award</li>
+                <li>Winning Alliance</li>
+              </ul>
+              <h4 class="qualifier">MA Who Let the Bots Out</h4>
+              <ul>
+                <li>Innovate Award</li>
+                <li>Winning Alliance</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <button class="arrow" id="nextArrow" onclick="next()">>></button>
+      </div>
+
+      <div class="flex freightFrenzy">
+        <button class="arrow"><<</button>
+        <div class="inner-flex">
+          <div class="info-flex">
+            <div>
+              <h5>2021-22</h5>
+              <h3>Freight Frenzy</h3>
+              <iframe id="embedVideo" width="560" height="315" src="https://www.youtube.com/embed/I6lX12idAf8?si=jb4M_K0xJyyLZwsS" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+          </div>
+          <hr class="divider">
+          <h2>Season Results</h2>
+          <div class="info-flex">
+            <div>
+              <h3>North Andover Qualifier</h3>
+              <ul>
+                <li>Finalist Alliance Award</li>
+                <li>Innovate Award</li>
+              </ul>
+            </div>
+            <div>
+              <h3>MA State Championships</h3>
+              <ul>
+                <li>Winning Alliance Partner Award</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <button class="arrow" id="nextArrow" onclick="next()">>></button>
+      </div>
+
+      <div class="flex ultimateGoal">
+        <button class="arrow"><<</button>
+        <div class="inner-flex">
+          <div class="info-flex">
+            <div>
+              <h5>2020-21</h5>
+              <h3>Ultimate Goal</h3>
+              <iframe id="embedVideo" width="560" height="315" src=  "https://www.youtube.com/embed/zYS0--eeUCM?si=NYcNLeSBIB43xpI6", frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+          </div>
+          <hr class="divider">
+          <h2>Season Results</h2>
+          <div class="info-flex">
+            <div>
+              <h3>State Finals</h3>
+              <ul>
+                <li>3rd Place</li>
+              </ul>
+            </div>
+            <div>
+              <h3>Awards</h3>
+              <ul>
+                <li>Collin's Aerospace Innovate Award</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <button class="arrow" id="nextArrow" onclick="next()">>></button>
+      </div>
+
+      <div class="flex skystone">
+        <button class="arrow"><<</button>
+        <div class="inner-flex">
+          <div class="info-flex">
+            <div>
+              <h5>2019-20</h5>
+              <h3>Skystone</h3>
+              <iframe id="embedVideo" width="560" height="315" src="https://www.youtube.com/embed/cxro7Bmqe9A?si=A51XmpdGFoNTDt9w", frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+          </div>
+          <hr class="divider">
+          <h2>Season Results</h2>
+          <div class="info-flex">
+            <div>
+              <h3>Andover Qualifier 2</h3>
+              <ul>
+                <li>Finalist Alliance</li>
+              </ul>
+            </div>
+            <div>
+              <h3>Wild West Hadley Qualifier</h3>
+              <ul>
+                <li>Design Award runner up</li>
+                <li>9th place overall</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <button class="arrow" id="nextArrow" onclick="next()">>></button>
+      </div>
+
+      <div class="flex roverRuckus">
+        <button class="arrow"><<</button>
+        <div class="inner-flex">
+          <div class="info-flex">
+            <div>
+              <h5>2018-19</h5>
+              <h3>Rover Ruckus</h3>
+              <iframe id="embedVideo" width="560" height="315" src="https://www.youtube.com/embed/rR4gR4l2XA8?si=spRxunTpjqu2J87r" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <p class="info-p">Each match is split into three parts called the autonomous period, the driver-controlled period, and the end game. During the autonomous period of the game, robots can only run on pre-programmed instructions and sensor inputs. There are several ways a team can earn points during the autonomous period. The first way to earn points is by lowering and landing the robot from a centerpiece in the middle of the field.  Another way is by identifying a gold mineral from a sample field. They can also claim a depot by placing their team marker in it. They can also earn points by parking in a crater at the end of the autonomous period.  During the driver-controlled period, teams can earn points by placing gold and silver minerals into their alliance's cargo holds and depots. The last 30 seconds of the driver controlled period is called the end game. During this period, teams can earn points by attaching the robot to the lander or parking the robot in or partially in a crater. </p>
+          </div>
+          <hr class="divider">
+          <h2>Season Results</h2>
+          <div class="info-flex">
+            <div>
+              <h3>Qualifiers</h3>
+              <ul>
+                <li>Andover: Finalist Alliance Captain</li>
+                <li>Hadley: Winning Alliance Partner</li>
+              </ul>
+            </div>
+            <div>
+              <h3>State Championship</h3>
+              <ul>
+                <li>18th out of 35 teams</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <button class="arrow" id="nextArrow" onclick="next()">>></button>
+      </div>
+
+      <div class="flex relicRecovery">
+        <button class="arrow"><<</button>
+        <div class="inner-flex">
+          <div class="info-flex">
+            <div>
+              <h5>2017-18</h5>
+              <h3>Relic Recovery</h3>
+              <iframe id="embedVideo" width="560" height="315" src="https://www.youtube.com/embed/rR4gR4l2XA8?si=spRxunTpjqu2J87r" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <p class="info-p">The field is set up so that there are grey and brown blocks located in the center. Each robot starts on a balancing stone, and in order to participate, each robot must be able to balance on the balancing stone. Robots are given 1 block if they want, and when the autonomous round begins the robots have 30 seconds to knock the opposite colored jewel (a wiffle ball) off, allowing their alliance to earn points. Additionally, robots can also place blocks into the crypto boxes. The alliance will get extra points during the autonomous round if the robot can correctly read an image that tells it which column to put the block in. After 30 seconds, the teleop round begins. In this round, team members are allowed to control their robot. Each team aims to fill their crypto box with blocks and their alliance will be awards extra points if they complete the crypto box with a provided pattern. If a team finishes their crypto box before the teleop time is up, they are allowed to pick up the relic. Even if a team has not completed their crypto box, they are allowed to pick up a relic during end game, the last 30 seconds. There are 4 relics and each relic is located at a corner of the field. When a robot picks up a relic, they can extend and reach over the field wall to place it in one of the three box. A relic placed in the furthest box gives the alliance the most points. If the relic is standing, then the alliance gets extra points.</p>
+          </div>
+          <hr class="divider">
+          <div class="info-flex">
+            <video width="200" controls>
+              <source src="imgs/IMG_0622.mp4" type="video/mp4">
+            </video>
+            <p class="gnocchiInfo">This is a video of our robot running an autonomous program. The robot correctly knocks off the opposite color jewel and correctly reads the image to tell it to put the block in the left crypto box column.</p>
+          </div>
+          <hr>
+          <h2>Season Results</h2>
+          <div class="info-flex">
+            <div>
+              <h3>Qualifiers</h3>
+              <p class="info-p">
+                This year we went to 2 qualifiers, one in Canton and one in Andover. <br><br>
+                Canton: This was our first qualifier. At Canton we won 3 out of our 4 qualifying matches and 2 out of our 3 semifinal matches. Unfortunately we lost both of our final matches. We were awarded the connect award for showing our involvement in the community and the finalist alliance award.<br><br>
+                Andover: This was our second qualifier, and the results were the same as the results in Canton. Between the two qualifiers we did not change our robot besides a few minor fixes.
+              </p>
+            </div>
+            <div>
+              <h3>State Championship</h3>
+              <ul>
+                <li>16th out of 36 teams</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <button class="arrow" id="nextArrow" onclick="next()">>></button>
+      </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div id="footer" class="footer">
+    <h5 class="footer-txt">Email: <span class="footer-unweighted-txt">waghostrobotics@gmail.com | </span>Address:
+      <span class="footer-unweighted-txt">Rooms 219 and 221, Westford Academy, 30 Patten Road, Westford, MA,
+        01886</span></h5>
+    <p><span id="gitInfo"></span><img id="gitIcon" src="imgs/github.png" class="git-icon"
+        onclick="redirect('https://github.com/waghostrobotics')"></p>
+  </div>
+  <script src="otherScripts.js"></script>
+</body>

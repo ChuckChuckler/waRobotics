@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="/styles/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div id="navbar" class="navbar">
+    <div class="inner-navbar">
+      <div class="inner-nav-component img-component">
+        <img src="/imgs/roboticsIcon.png" class="icon">
+        <h4>Westford Academy Robotics</h4>
+      </div>
+      <div class="inner-nav-component links-component">
+        <div class="nav-link" onclick="openPage('achievements')">
+          <h4><a>Achievements</a></h4>
+        </div>
+        <div class="nav-link" onclick="openPage('teams')">
+          <h4><a>Teams</a></h4>
+        </div>
+        <div class="nav-link" onclick="openPage('summercamp')">
+          <h4><a>Summer Camp</a></h4>
+        </div>
+        <div class="nav-link" onclick="openPage('seasonsChallenges')">
+          <h4><a>Seasons & Challenges</a></h4>
+        </div>
+        <div class="nav-link" onclick="openPage('outreach')">
+          <h4><a>Outreach</a></h4>
+        </div>
+        <div class="nav-link" onclick="openPage('join')">
+          <h4><a>Join</a></h4>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <hr class="header-elm">
+  <div class="site-body">
+    <div class="title-div">
+      <h2 class="wa-teams-title"><i>FIRST Tech Challenge Teams 3565 and 24605</i></h2>
+      <hr class="name-title-hr" id="name-title-hr">
+      <h1 class="wa-robotics-title" id="wa-robotics-title" aria-hidden="true">Ghost and Phantom Robotics</h1>
+      <img
+        src="https://st.depositphotos.com/1008939/4064/i/950/depositphotos_40640403-stock-photo-man-cheering-up-his-friend.jpg"
+        class="banner-img" id="banner-img">
+    </div>
+    <br>
+    <div class="inner-info">
+      <div id="about-us" class="about-us section">
+        <div class="vertical-align">
+          <h3 class="about-us-header">About Us</h3>
+          <div class="info-flexbox">
+            <div class="written-info">
+              <p class="about-us-p">We are an FTC team from Westford Academy, a public high school in Westford,
+                Massachusetts. This year is our 18th year competing, and our team consists of students from grades nine
+                through twelve with a variety of experience levels. We regularly advance from state qualifiers to the
+                state championships, winning the Winning Alliance Partner Award for the State Championship in the
+                2021-2022 season and qualifying second in the 2022-2023 State Championship. This season, we hope to go
+                even further!</p>
+            </div>
+            <div class="written-img">
+              <img
+                src="https://st3.depositphotos.com/4232343/15737/i/1600/depositphotos_157371240-stock-photo-adult-frightened-businessman-is-escaping.jpg"
+                class="about-us-img">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sponsors section" id="sponsors">
+        <div class="vertical-align">
+          <h3>Sponsors</h3>
+          <div class="sponsors-flexbox">
+            <img class="sponsor-img redhat" src="imgs/red-hat.jpg" onclick="redirect('https://www.redhat.com/')">
+            <img class="sponsor-img polar-controls" src="imgs/polar-controls.jpeg"
+              onclick="redirect('https://polarcontrols.com/')">
+            <img class="sponsor-img solidworks" src="imgs/solidworks.png"
+              onclick="redirect('https://www.solidworks.com/')">
+          </div>
+          <br>
+        </div>
+      </div>
+      <div id="ftc-info" class="ftc-info section">
+        <div class="vertical-align">
+          <br>
+          <h3 class="ftc-info-header">About the FIRST Tech Challenge</h3>
+          <div class="info-flexbox">
+            <div class="written-img">
+              <img
+                src="https://c8.alamy.com/comp/2F5BEER/excited-smiling-man-shows-thumbs-up-supportive-like-and-praise-something-excellent-good-job-well-done-gesture-nice-work-standing-over-white-2F5BEER.jpg"
+                class="about-us-img">
+            </div>
+            <div class="written-info">
+              <p class="about-us-p">FIRST is an organization that aims to inspire young children and students to pursue
+                a career in STEM. FIRST is divided into 4 different groups. We participate in the FIRST Tech Challenge,
+                created for middle school and high school students, although our team consists only of high school
+                students. Each year, FTC creates a new challenge that is revealed in early September. These challenges
+                require teams to work together to develop a well-designed robot. Each round during competition consists
+                of three states: autonomous, teleop, and endgame. Qualifiers run throughout December, January and
+                February. The state championship is usually the first Saturday in March, and determines the three teams
+                which will move on and represent Massachusetts for the rest of the rounds. <br> To find out more about
+                this year's challenge, click the corresponding year under the Seasons & Challenges tab. <br> If you
+                would like to, go to the FTC website and click FTC in the upper left hand corner. If you are on a mobile
+                device it is located in the menu in the upper left hand corner.</p>
+            </div>
+          </div>
+          <h3 class="ftc-link" onclick="redirect('https://www.firstinspires.org/robotics/ftc')">FTC Website</h3>
+        </div>
+      </div>
+      <br>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div id="footer" class="footer">
+      <h5 class="footer-txt">Email: <span class="footer-unweighted-txt">waghostrobotics@gmail.com | </span>Address:
+        <span class="footer-unweighted-txt">Rooms 219 and 221, Westford Academy, 30 Patten Road, Westford, MA,
+          01886</span></h5>
+      <p><span id="gitInfo"></span><img id="gitIcon" src="imgs/github.png" class="git-icon"
+          onclick="redirect('https://github.com/waghostrobotics')"></p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/DrawSVGPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/MotionPathHelper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/MotionPathPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollToPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/TextPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+    
+    <script src="script.js"></script>
+</body>
+
+</html>

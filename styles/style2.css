@@ -1,0 +1,205 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: #410b14ff;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+}
+
+.header-elm{
+  opacity: 0;
+}
+
+.navbar {
+  background-color: #262626ff;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.inner-navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.img-component {
+  width: 280px;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+h4 {
+  color: white;
+}
+
+.links-component {
+  width: 600px;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+}
+
+a {
+  color: white;
+  text-decoration: underline;
+}
+
+.nav-link {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.nav-link:hover {
+  background-color: #050505ff;
+}
+
+.site-body {
+  margin-top: 80px;
+}
+
+h2 {
+  color: white;
+  text-align: center;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+.footer-txt {
+  color: #430a13ff;
+  font-size: 15px;
+}
+
+.footer {
+  background-color: white;
+  border-top: 1.5px solid #595959;
+  width: 100%;
+  position: fixed;
+  bottom: -10px;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.footer-unweighted-txt {
+  font-weight: 200;
+}
+
+.git-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.title-block{
+    background-color: transparent;
+    border: 1px white solid;
+}
+
+.inner-body{
+    background-color: rgb(83, 54, 54);
+    box-sizing: border-box;
+    padding: 10px;
+    width: 100%;
+    border: 1px white solid;
+}
+
+.flex{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.arrow{
+    height: 435px;
+    width: 10%;
+    font-size: 50px;
+    font-weight:100;
+    background-color: transparent;
+    color: white;
+    border: transparent;
+}
+
+.inner-flex{
+    width: 75%;
+    border: 1px white solid;
+}
+
+.info-flex{
+  box-sizing: border-box;
+  padding: 10px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.info-p{
+  color: white;
+  border: 0.5px white solid;
+  width: 300px;
+  box-sizing: border-box;
+  padding: 5px;
+}
+
+.divider{
+  width: 80%;
+}
+
+.info-img{
+  width: 30%;
+}
+
+.gnocchiInfo{
+  width: 60%;
+  font-size: 18px;
+  color: white;
+}
+
+.qualifier{
+  color: black;
+  font-size: 15px;
+}
+
+.intoTheDeep{
+  display: block;
+}
+
+.centerStage{
+  display: none;
+}
+
+.powerplay{
+  display: none;
+}
+
+.freightFrenzy{
+  display: none;
+}
+
+.ultimateGoal{
+  display: none;
+}
+
+.skystone{
+  display: none;
+}
+
+.roverRuckus{
+  display: none;
+}
+
+.relicRecovery{
+  display: none;
+}
