@@ -173,7 +173,7 @@ h1 {
 }
 
 .intoTheDeep{
-  display: block;
+  display: flex;
 }
 
 .centerStage{
@@ -202,4 +202,30 @@ h1 {
 
 .relicRecovery{
   display: none;
+}
+
+.bg-div{
+  background-color: rgb(83, 54, 54);
+}
+
+.camp-flyer{
+  width: 40%;
+}
+
+.camp-flex{
+  display: flex;
+  justify-content: space-between;
+}
+
+.camp-info{
+  width: 55%;
+}
+
+.top-display{
+  display: flex;
+}
+
+.small-arrow{
+  background-color: transparent;
+  border: none;
 }
