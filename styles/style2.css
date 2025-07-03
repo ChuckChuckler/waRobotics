@@ -46,6 +46,40 @@ h4 {
   grid-template-columns: auto auto auto auto auto auto;
 }
 
+.links-mobile-component{
+  width: 20%;
+  display: grid;
+  grid-template-rows: auto auto auto auto auto auto;
+}
+
+.other-links-mobile{
+  display: none;
+  width: 150px;
+  background-color:#262626ff;
+  position: absolute;
+  right:0;
+  top:60px;
+}
+
+.full-mobile-nav{
+  display: none;
+}
+
+.drop-down-nav{
+  background-color: transparent;
+  color: white;
+  border: none;
+  /*position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);*/
+}
+
+.nav-dropdown{
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
 a {
   color: white;
   text-decoration: underline;
@@ -58,6 +92,11 @@ a {
 }
 
 .nav-link:hover {
+  background-color: #050505ff;
+}
+
+.nav-option:checked{
+  box-shadow: 0 0 10px 100px #050505ff inset;
   background-color: #050505ff;
 }
 
@@ -228,4 +267,21 @@ h1 {
 .small-arrow{
   background-color: transparent;
   border: none;
+}
+
+.twenty{
+  display: none;
+}
+
+.nineteen{
+  display: none;
+}
+
+.eighteen{
+  display: none;
+}
+
+.twonine{
+  font-size: 20px;
+  word-spacing: 1vw;
 }
