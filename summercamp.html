@@ -8,7 +8,7 @@
   <link href="/styles/style2.css" rel="stylesheet" type="text/css" />
   <link href="/styles/summercamp.css" rel="stylesheet" type="text/css"/>
 </head>
-<body>
+<body class="body">
   <div id="navbar" class="navbar desktop-nav">
     <div class="inner-navbar">
       <div class="inner-nav-component img-component">
@@ -45,9 +45,9 @@
           <h4 class="wa-robotics-nav">WA Robotics</h4>
         </div>
         <div class="nav-dropdown">
-          <div class="inner-nav-component links-mobile-component">
-            <div class="nav-link" onclick="openPage('achievements')">
-              <h4 class="mobile-other summercamp"><a>Summer Camp</a></h4>
+          <div class="inner-nav-component links-mobile-component summercamp">
+            <div class="nav-link">
+              <h4 class="mobile-other"><a>Summer Camp</a></h4>
             </div>
           </div>
           <button class="drop-down-nav" id="dropdownBtn" onclick="showOptions()">V</button>
@@ -56,7 +56,7 @@
     </div>
     <div class="other-links-mobile" id="otherLinks">
       <div class="nav-link" onclick="openPage('achievements')">
-        <h4 class="mobile-other"><a>Summer Camp</a></h4>
+        <h4 class="mobile-other"><a>Achievements</a></h4>
       </div>
 
       <div class="nav-link" onclick="openPage('teams')">
@@ -76,6 +76,7 @@
       </div>
     </div>
   </div>
+  <div class="black-screen"></div>
   <div class="site-body">
     <div class="title-block">
       <h2 class="ghost-robotics-title"><i>Ghost and Phantom Robotics</i></h2>

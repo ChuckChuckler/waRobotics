@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width">
   <title>replit</title>
   <link href="/styles/style2.css" rel="stylesheet" type="text/css" />
+  <link href="/styles/join.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
   <div id="navbar" class="navbar">
@@ -36,12 +37,57 @@
       </div>
     </div>
   </div>
+  <div class="full-mobile-nav" id="mobileNavbar">
+    <div id="navbar" class="navbar mobile-nav">
+      <div class="inner-navbar">
+        <div class="inner-nav-component img-component mobile-ver">
+          <img src="/imgs/roboticsIcon.png" class="icon" onclick="openPage('index')">
+          <h4 class="wa-robotics-nav">WA Robotics</h4>
+        </div>
+        <div class="nav-dropdown">
+          <div class="inner-nav-component links-mobile-component summercamp">
+            <div class="nav-link">
+              <h4 class="mobile-other"><a>Join</a></h4>
+            </div>
+          </div>
+          <button class="drop-down-nav" id="dropdownBtn" onclick="showOptions()">V</button>
+        </div>
+      </div>
+    </div>
+    <div class="other-links-mobile" id="otherLinks">
+      <div class="nav-link" onclick="openPage('achievements')">
+        <h4 class="mobile-other"><a>Achievements</a></h4>
+      </div>
+
+      <div class="nav-link" onclick="openPage('teams')">
+        <h4 class="mobile-other"><a>Teams</a></h4>
+      </div>
+      
+      <div class="nav-link" onclick="openPage('summercamp')">
+        <h4 class="mobile-other"><a>Summer Camp</a></h4>
+      </div>
+
+      <div class="nav-link" onclick="openPage('seasonsChallenges')">
+        <h4 class="mobile-other"><a>Seasons & Challenges</a></h4>
+      </div>
+
+      <div class="nav-link" onclick="openPage('outreach')">
+        <h4 class="mobile-other"><a>Outreach</a></h4>
+      </div>
+
+      <div class="nav-link" onclick="openPage('join')">
+        <h4 class="mobile-other"><a>Join</a></h4>
+      </div>
+    </div>
   </div>
   <div class="site-body">
-    <h2><i>Ghost and Phantom Robotics</i></h2>
-    <h1>Join</h1>
+    <div class="title-block">
+      <h2 class="ghost-robotics-title"><i>Ghost and Phantom Robotics</i></h2>
+      <h1 class="page-title">Achievements</h1>
+    </div>
+    <br>
     <div class="bg-div">
-      <h3>Thank you for your interest in joining our team!</h3>
+      <h3 class="line1">Thank you for your interest in joining our team!</h3>
       <h4>To join, show up for one of our introductory meetings in room 219 (the engineering room)</h4>
       <h4>We start meeting after school on the first friday of the year at 2pm</h4>
       <br>
@@ -70,5 +116,6 @@
     <p><span id="gitInfo"></span><img id="gitIcon" src="imgs/github.png" class="git-icon"
         onclick="redirect('https://github.com/waghostrobotics')"></p>
   </div>
-  <script src="script.js"></script>
+  <script src="otherScripts.js"></script>
+  <script src="pageSpecificScripts/join.js"></script>
 </body>

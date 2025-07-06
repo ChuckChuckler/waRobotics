@@ -111,7 +111,6 @@ document.addEventListener("DOMContentLoaded", ()=>{
 
 let state = 0;
 
-
 function showOptions(){
     if(state==0){
         state=1;
