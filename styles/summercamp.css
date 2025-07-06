@@ -1,0 +1,138 @@
+@keyframes ghost-robotics-swell {
+    to {font-size: 23px;}
+    from {font-size: 20px;}
+}
+
+@keyframes ghost-robotics-shrink {
+    from {font-size: 23px;}
+    to {font-size: 20px;}
+}
+
+@keyframes achievements-swell{
+    to {font-size: 40px;}
+    from {font-size: 37px;}
+}
+
+@keyframes achievements-shrink{
+    from {font-size: 40px;}
+    to {font-size: 37px;}
+}
+
+@keyframes flyer-swell{
+    from{width: 98%;}
+    to{width:100%;}
+}
+
+@keyframes flyer-shrink{
+    to{width: 98%;}
+    from{width:100%;}
+}
+
+.ghost-robotics-title{
+    font-size: 20px;
+    width: 100%;
+    margin: auto;
+    color: rgb(189, 189, 189);
+}
+
+.ghost-robotics-title:hover{
+    font-size: 23px;
+    animation: ghost-robotics-swell 0.4s ease-out;
+}
+
+.ghost-robotics-title:not(hover){
+    font-size: 20px;
+    animation: ghost-robotics-shrink 0.4s ease-out;
+}
+
+.page-title{
+    font-size: 37px;
+    width: 100%;
+    margin: auto;
+}
+
+.page-title:hover{
+    font-size: 40px;
+    animation: achievements-swell 0.4s ease-out;
+}
+
+.page-title:not(hover){
+    font-size: 37px;
+    animation: achievements-shrink 0.4s ease-out;
+}
+
+.title-block{
+    height: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.camp-flyer{
+  width: 98%;
+}
+
+.camp-flyer:hover{
+    width: 100%;
+    animation: flyer-swell 0.5s ease-out;
+}
+
+.camp-flyer:not(hover){
+    width: 98%;
+    animation: flyer-shrink 0.5s ease-out;
+}
+
+.camp-flex{
+  display: flex;
+  justify-content: space-between;
+}
+
+.camp-info{
+  width: 55%;
+}
+
+.signup1{
+    color: white;
+    font-size: 25px;
+}
+
+.signup2{
+    color: rgb(193, 193, 193);
+    font-size: 18px;
+}
+
+.flyer-holder{
+    width: 40%;
+    height: 400px;
+    overflow: auto;
+}
+
+.summercamp{
+    
+}
+
+
+@media screen and (max-width: 780px){
+    .camp-flex{
+        display: block;
+    }
+
+    .flyer-holder{
+        width: 100%;
+    }
+
+    .signup1{
+        width: 100%;
+        text-align: center;
+        font-size: 25px;
+    }
+
+    .signup2{
+        width: 100%;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .camp-info{
+        width: 100%;
+    }
+}

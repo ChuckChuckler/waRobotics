@@ -11,6 +11,8 @@ const SEASONS = [
 
 let seasonIndex = 0;
 
+const mobileQuery = window.matchMedia("(max-width: 787px)");
+
 function next(){
     seasonIndex+=1;
     if(seasonIndex==SEASONS.length){
@@ -85,15 +87,17 @@ function openPage(page){
   window.location.href = `${page}.html`;
 }
 
-const mobileQuery = window.matchMedia("(max-width: 787px)");
-
 function mobileAdjust(query){
     if(query.matches){
         document.getElementById("mobileNavbar").style.display = "block";
         document.getElementById("navbar").style.display = "none";
+        document.getElementsByClassName("footer-txt")[0].innerHTML = '<span class="footer-unweighted-txt">waghostrobotics@gmail.com<br>Rooms 219 and 221, Westford Academy, 30 Patten Road, Westford, MA, 01886</span>';
     }else{
         document.getElementById("mobileNavbar").style.display = "none";
         document.getElementById("navbar").style.display = "block";
+        document.getElementsByClassName("footer-txt")[0].innerHTML = `Email: <span class="footer-unweighted-txt">waghostrobotics@gmail.com | </span>Address:
+        <span class="footer-unweighted-txt">Rooms 219 and 221, Westford Academy, 30 Patten Road, Westford, MA,
+          01886</span>`;
     }
 }
 
@@ -101,6 +105,21 @@ mobileQuery.addEventListener("change", (e)=>{
     mobileAdjust(e);
 });
 
-window.onload = function(){
+document.addEventListener("DOMContentLoaded", ()=>{
     mobileAdjust(mobileQuery);
+});
+
+let state = 0;
+
+
+function showOptions(){
+    if(state==0){
+        state=1;
+        document.getElementById("otherLinks").style.display = "grid";
+        document.getElementById("dropdownBtn").innerText = "^"
+    }else{
+        state=0;
+        document.getElementById("otherLinks").style.display = "none";
+        document.getElementById("dropdownBtn").innerText = "V"
+    }
 }
