@@ -1,0 +1,118 @@
+@keyframes ghost-robotics-swell {
+    to {font-size: 23px;}
+    from {font-size: 20px;}
+}
+
+@keyframes ghost-robotics-shrink {
+    from {font-size: 23px;}
+    to {font-size: 20px;}
+}
+
+@keyframes achievements-swell{
+    to {font-size: 40px;}
+    from {font-size: 37px;}
+}
+
+@keyframes achievements-shrink{
+    from {font-size: 40px;}
+    to {font-size: 37px;}
+}
+
+@keyframes twonine-spaceout{
+    from{letter-spacing: 1.5px;}
+    to{letter-spacing: 2.5px;}
+}
+
+@keyframes twonine-spacein{
+    to{letter-spacing: 1.5px;}
+    from{letter-spacing: 2.5px;}
+}
+
+.ghost-robotics-title{
+    font-size: 20px;
+    width: 100%;
+    margin: auto;
+}
+
+.ghost-robotics-title:hover{
+    font-size: 23px;
+    animation: ghost-robotics-swell 0.4s ease-out;
+}
+
+.ghost-robotics-title:not(hover){
+    font-size: 20px;
+    animation: ghost-robotics-shrink 0.4s ease-out;
+}
+
+.achievements-title{
+    font-size: 37px;
+    width: 100%;
+    margin: auto;
+}
+
+.achievements-title:hover{
+    font-size: 40px;
+    animation: achievements-swell 0.4s ease-out;
+}
+
+.achievements-title:not(hover){
+    font-size: 37px;
+    animation: achievements-shrink 0.4s ease-out;
+}
+
+.title-block{
+    height: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.inside-grid{
+    display: grid;
+    grid-template-rows: auto auto;
+}
+
+.inner-body{
+    background-color: rgb(83, 54, 54);
+    box-sizing: border-box;
+    padding: 10px;
+    height: 70%;
+    border: 1px white solid;
+    overflow: auto;
+}
+
+.twonine{
+  font-size: 20px;
+  letter-spacing: 1.5px;
+  color: rgb(204, 204, 204);
+}
+
+.twonine:hover{
+    letter-spacing: 2.5px;
+    animation: twonine-spaceout 0.5s ease-out;
+}
+
+.twonine:not(hover){
+    letter-spacing: 1.5px;
+    animation: twonine-spacein 0.5s ease-out;
+}
+
+.twonine-underline{
+    color: white;
+    width: 200px;
+}
+
+h3{
+    color: white;
+}
+
+p{
+    color: rgb(204, 203, 203);
+}
+
+li{
+    color: rgb(204, 203, 203);
+}
+
+.mobile-other{
+    font-size: 15px;
+}

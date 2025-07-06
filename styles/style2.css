@@ -36,6 +36,10 @@ body {
   grid-template-columns: auto auto;
 }
 
+.mobile-ver{
+  width: 150px;
+}
+
 h4 {
   color: white;
 }
@@ -279,9 +283,4 @@ h1 {
 
 .eighteen{
   display: none;
-}
-
-.twonine{
-  font-size: 20px;
-  word-spacing: 1vw;
 }
