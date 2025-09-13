@@ -21,16 +21,22 @@ body{
     background-color: rgb(83, 54, 54);
     box-sizing: border-box;
     padding: 10px;
-    height: 70%;
+    height: 80vh;
     border: 1px white solid;
-    overflow-y: auto;
     overflow-x: hidden;
+    overflow-y: hidden;
+    display: grid;
+    grid-template-rows: auto auto;
 }
 
 .twonine{
   font-size: 20px;
   letter-spacing: 1.5px;
   color: rgb(204, 204, 204);
+}
+
+.title-block{
+    background-image: url("https://st.depositphotos.com/1049680/51697/i/1600/depositphotos_516974520-stock-photo-young-latin-woman-holding-badminton.jpg");
 }
 
 .twonine:hover{
@@ -67,6 +73,39 @@ li{
     margin: auto;
     box-sizing: border-box;
     padding: 5px;
+}
+
+.achievement{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+}
+
+.achievement-img{
+    height: 325px;
+}
+
+.achievement-txt{
+    width: 40%;
+    margin: auto;
+}
+
+.inspire-award{
+    display: flex;
+}
+
+.connect-award{
+    display: none;
+}
+
+.competing{
+    display: none;
+}
+
+.achievement-flex{
+    display: flex;
+    width: 100%;
 }
 
 @media screen and (max-width: 810px){

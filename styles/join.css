@@ -3,3 +3,23 @@
   background-color: rgb(83, 54, 54);
   border: 1px white solid;
 }
+
+.primary{
+    color: white;
+}
+
+.secondary{
+    color: rgb(194, 194, 194);
+}
+
+.line1{
+    text-align: center;
+    width: 100%;
+    letter-spacing: 0.25px;
+    font-size: 20px;
+}
+
+.line2{
+
+}
+

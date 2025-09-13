@@ -15,7 +15,7 @@
   <div id="navbar" class="navbar desktop-nav">
     <div class="inner-navbar">
       <div class="inner-nav-component img-component">
-        <img src="/imgs/roboticsIcon.png" class="icon" onclick="openPage('index')">
+        <img src="/imgs/roboticsIcon.png" class="icon" onclick="openPage('index2')">
         <h4>Westford Academy Robotics</h4>
       </div>
       <div class="inner-nav-component links-component">
@@ -44,7 +44,7 @@
     <div id="navbar" class="navbar mobile-nav">
       <div class="inner-navbar">
         <div class="inner-nav-component img-component mobile-ver">
-          <img src="/imgs/roboticsIcon.png" class="icon" onclick="openPage('index')">
+          <img src="/imgs/roboticsIcon.png" class="icon" onclick="openPage('index2')">
           <h4 class="wa-robotics-nav">WA Robotics</h4>
         </div>
         <div class="nav-dropdown">
@@ -83,34 +83,59 @@
   <div class="site-body">
     <div class="inside-grid">
       <div class="title-block">
-        <h2 class="ghost-robotics-title"><i>Ghost and Phantom Robotics</i></h2>
-        <h1 class="page-title">Achievements</h1>
+        <div class="inner-title-block">
+          <h2 class="ghost-robotics-title"><i>Ghost and Phantom Robotics</i></h2>
+          <hr>
+          <h1 class="page-title">Achievements</h1>
+        </div>
       </div>
       <br>
       <div class="inner-body">
-        <h2 class="twonine">Have competed in FTC since 2009</h2>
-        <hr class="twonine-underline">
+        <div>
+          <h2 class="twonine">Have competed in FTC since 2009</h2>
+          <hr class="twonine-underline">
+        </div>
         <div class="p-holder">
-          <h3>➢ Inspire Award (2016-17)</h3>
-          <p>"This formally judged award is given to the team that truly embodied the "challenge" of the FTC program. The team that receives this award is chosen by the judges as having best represented a "role model FTC Team". This Team is a top contender for all other judging categories and is a strong competitor on the field. The Inspire Award Winner is an inspiration to other teams, acting with Gracious Professionalism™ both on and off the playing field. This team understands how to communicate their experiences and knowledge to other teams, sponsors, and the judges."</p>
-          <br>
-          <h3>➢ Connect Award (2018-19)</h3>
-          <p>"This judged award is given to the team that most connected with their local community and the engineering community. A true FIRST team is more than a sum of its parts, and recognizes that its schools and communities play an essential part to their success. The recipient of this award is recognized for helping the community understand FIRST, the FTC, and the team itself. The team that wins this award is aggressively seeking engineers and exploring the opportunities available in the world of engineering, science and technology."</p>
-          <br>
-          <h3>➢ Competing at States</h3>
-          <ul>
-            <li>2016-17</li>
-            <li>2017-18</li>
-            <li>2018-19</li>
-            <li>2019-20</li>
-            <li>2020-21</li>
-            <li>2021-22</li>
-            <li>2022-23</li>
-          </ul>
+          <div class="achievement-flex">
+            <button class="arrow" onclick="prev()"><<</button>
+            <div class="achievement inspire-award" id="inspire">
+              <div class="achievement-txt">
+                <h3>➢ Inspire Award (2016-17)</h3>
+                <p>"This formally judged award is given to the team that truly embodied the "challenge" of the FTC program. The team that receives this award is chosen by the judges as having best represented a "role model FTC Team". This Team is a top contender for all other judging categories and is a strong competitor on the field. The Inspire Award Winner is an inspiration to other teams, acting with Gracious Professionalism™ both on and off the playing field. This team understands how to communicate their experiences and knowledge to other teams, sponsors, and the judges."</p>
+              </div>
+              <img class="achievement-img" src="https://www.shutterstock.com/shutterstock/photos/689166904/display_1500/stock-photo-elderly-man-eating-soup-in-bed-689166904.jpg">
+            </div>
+            <div class="achievement connect-award" id="connect">
+              <div class="achievement-txt">
+                <h3>➢ Connect Award (2018-19)</h3>
+                <p>"This judged award is given to the team that most connected with their local community and the engineering community. A true FIRST team is more than a sum of its parts, and recognizes that its schools and communities play an essential part to their success. The recipient of this award is recognized for helping the community understand FIRST, the FTC, and the team itself. The team that wins this award is aggressively seeking engineers and exploring the opportunities available in the world of engineering, science and technology."</p>
+              </div>
+              <img class="achievement-img" src="https://c8.alamy.com/comp/2RPM17K/elderly-senior-man-eating-soup-with-bread-and-green-onion-at-home-in-the-kitchen-happy-retirement-simple-whole-food-2RPM17K.jpg">
+            </div>
+            <div class="achievement competing" id="competing">
+              <div class="achievement-txt">
+                <h3>➢ Competing at States</h3>
+                <ul>
+                  <li>2016-17</li>
+                  <li>2017-18</li>
+                  <li>2018-19</li>
+                  <li>2019-20</li>
+                  <li>2020-21</li>
+                  <li>2021-22</li>
+                  <li>2022-23</li>
+                </ul>
+              </div>
+              <img class="achievement-img" src="https://www.alamy.com/aggregator-api/download?url=https://c8.alamy.com/comp/FJ1YKB/old-man-eating-soup-in-hutong-area-beijing-china-FJ1YKB.jpg">
+            </div>
+            <button class="arrow" onclick="next()">>></button>
+          </div>
         </div>
       </div>
     </div>
   </div>
+  <br>
+  <br>
+  <br>
   <div id="footer" class="footer">
       <h5 class="footer-txt">Email: <span class="footer-unweighted-txt">waghostrobotics@gmail.com | </span>Address:
         <span class="footer-unweighted-txt">Rooms 219 and 221, Westford Academy, 30 Patten Road, Westford, MA,
@@ -118,8 +143,8 @@
       <p><span id="gitInfo"></span><img id="gitIcon" src="imgs/github.png" class="git-icon"
           onclick="redirect('https://github.com/waghostrobotics')"></p>
   </div>
-  <script src="otherScripts.js"></script>
-  <script src="pageSpecificScripts/achievements.js"></script>
+  <script src="scripts/otherScripts.js"></script>
+  <script src="scripts/pageSpecificScripts/achievements.js"></script>
   
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
 </body>

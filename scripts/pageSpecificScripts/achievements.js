@@ -1,3 +1,5 @@
+const achievements = ["inspire", "connect", "competing"];
+
 window.onload = function(){
     let timeline = gsap.timeline();
     timeline.from(".title-block", {
@@ -32,3 +34,4 @@ window.onload = function(){
         overflow: "auto"
     }, "<")
 }
+

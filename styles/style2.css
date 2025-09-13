@@ -1,21 +1,21 @@
 @keyframes ghost-robotics-swell {
-    to {font-size: 23px;}
-    from {font-size: 20px;}
+    to {font-size: 53px;}
+    from {font-size: 50px;}
 }
 
 @keyframes ghost-robotics-shrink {
-    from {font-size: 23px;}
-    to {font-size: 20px;}
+    from {font-size: 53px;}
+    to {font-size: 50px;}
 }
 
 @keyframes achievements-swell{
-    to {font-size: 40px;}
-    from {font-size: 37px;}
+    to {font-size: 60px;}
+    from {font-size: 55px;}
 }
 
 @keyframes achievements-shrink{
-    from {font-size: 40px;}
-    to {font-size: 37px;}
+    from {font-size: 60px;}
+    to {font-size: 55px;}
 }
 
 html {
@@ -167,8 +167,20 @@ h1 {
 }
 
 .title-block{
-    background-color: transparent;
     border: 1px white solid;
+    height: 75vh;
+    box-sizing: border-box;
+    padding: 10px;
+    background-position: center top;
+    background-color: rgba(65, 11, 20, 0.6);
+    background-blend-mode: darken;
+}
+
+.inner-title-block{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .inner-body{
@@ -304,40 +316,36 @@ h1 {
 }
 
 .ghost-robotics-title{
-    font-size: 20px;
+    font-size: 50px;
     width: 100%;
     margin: auto;
     color: rgb(189, 189, 189);
+    text-shadow: rgb(39, 38, 38) 2px 2px;
 }
 
 .ghost-robotics-title:hover{
-    font-size: 23px;
+    font-size: 53px;
     animation: ghost-robotics-swell 0.4s ease-out;
 }
 
 .ghost-robotics-title:not(hover){
-    font-size: 20px;
+    font-size: 50px;
     animation: ghost-robotics-shrink 0.4s ease-out;
 }
 
 .page-title{
-    font-size: 37px;
+    font-size: 55px;
     width: 100%;
     margin: auto;
+    text-shadow: 2px 2px black;
 }
 
 .page-title:hover{
-    font-size: 40px;
+    font-size: 60px;
     animation: achievements-swell 0.4s ease-out;
 }
 
 .page-title:not(hover){
-    font-size: 37px;
+    font-size: 55px;
     animation: achievements-shrink 0.4s ease-out;
-}
-
-.title-block{
-    height: 100%;
-    box-sizing: border-box;
-    padding: 10px;
 }
